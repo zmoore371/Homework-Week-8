@@ -1,0 +1,20 @@
+:root{
+    --teal:#20d0c4;
+    --darkblue:#12263A;
+    --background:linear-gradient(132deg, rgb(31, 207, 195) 47.57%, rgb(31, 145, 207) 100.00%);
+}
+
+body{
+    width: 100%;
+    margin: 0;
+}
+
+header h1{
+    background: var(--background);
+    margin: 0;
+    text-align: center;
+    color: var(--darkblue);
+    height: 70px;
+    padding-top: 25px;
+}
+
