@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
 
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 :root{
     --teal:#20d0c4;
@@ -34,7 +37,6 @@ header h1{
     text-align: center;
     color: var(--darkblue);
     padding-top: 50px;
-    /* padding-left: 15px; */
 }
 
 nav{
@@ -106,7 +108,6 @@ nav{
 
 .work-aside{
     border-bottom: 5px solid var(--aquamarine);
-    /* width: 100%; */
     color: var(--darkblue);
     text-indent: 25px;
 }
@@ -120,7 +121,7 @@ nav{
     text-decoration: none;
     position: relative;
     margin-left: 4%;
-    margin-top: 15px;
+    margin-top: 30px;
 
 }
 
@@ -161,14 +162,87 @@ nav{
 #card3{
     background-image: url("../assets/images/project-screenshot/scheduler.png");
     background-size: cover;
+    background-position: center;
 }
 
 #card4{ 
     background-image: url("../assets/images/project-screenshot/quiz.png");
     background-size: cover;
+    background-position: center;
 }
 
 #card5{
     background-image: url("../assets/images/project-screenshot/password-generator.png");
     background-size: cover;
+    background-position: center;
 }
+
+.repo-link{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--darkblue);
+    padding-left: 15px;
+}
+
+.contact-me{
+    display: flex;
+    flex-direction: column;
+}   
+
+.contact-me-side{
+    color: var(--darkblue);
+    border-bottom: 5px solid var(--aquamarine);
+    text-indent: 25px;
+}
+
+.contact-list{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+@media (min-width: 770px) {
+
+    .reference{
+        text-indent: 25px;
+    }
+
+    .about-me{
+        flex-direction: row;
+        padding-top: 15px;
+    }
+
+    .about-me-aside{
+        border-bottom: none;
+        
+    }
+
+    .about-me-main{
+        border-left: 5px solid var(--aquamarine);
+    }
+
+    .work{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .work-aside{
+        display: flex;
+        border-right: 5px solid black;
+    }
+    
+    .work-main{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+
+    .large-card{
+        height: 700px;
+    }
+
+    .repo-link{
+        text-indent:60px;
+    }
+} 
